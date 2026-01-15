@@ -96,21 +96,21 @@ function loadXMLDoc() {
           cell2.className = "right monospace";
 
           let cell3 = row.insertCell(-1);
-          cell3.innerHTML = data.resultList[i].name;
+          cell3.innerHTML = data.resultList[i].name || "-";
 
           let cell4 = row.insertCell(-1);
-          cell4.innerHTML = data.resultList[i].description.substring(0,30);
+          cell4.innerHTML = (data.resultList[i].description ? data.resultList[i].description.substring(0,30) : "-");
 
           let cell5 = row.insertCell(-1);
-          cell5.innerHTML = data.resultList[i].rxPacketsReceived;
+          cell5.innerHTML = data.resultList[i].rxPacketsReceived || "-";
           cell5.className = "right";
 
           let cell6 = row.insertCell(-1);
-          cell6.innerHTML = data.resultList[i].txPacketsEmitted;
+          cell6.innerHTML = data.resultList[i].txPacketsEmitted || "-";
           cell6.className = "right"
 
           let cell7 = row.insertCell(-1);
-          cell7.innerHTML = data.resultList[i].description;
+          cell7.innerHTML = data.resultList[i].description || "-";
           cell7.className = "right";
 
           let current_date_now = new Date();
