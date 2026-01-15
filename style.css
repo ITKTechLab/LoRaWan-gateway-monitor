@@ -13,7 +13,7 @@ body {
   border-collapse: collapse;
   width: 75%;
   height: 100%;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   position: fixed;
   text-align: left;
   white-space: nowrap;
@@ -21,6 +21,10 @@ body {
 
 .right {
     text-align: right;
+}
+
+.monospace {
+    font-family: "Courier New", Courier, monospace;
 }
 
 div#table_div tr:nth-child(even) {

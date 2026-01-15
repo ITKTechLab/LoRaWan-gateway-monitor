@@ -60,7 +60,7 @@ function loadXMLDoc() {
       cell1.innerHTML = "Nr.";
 
       let cell2 = row.insertCell(1);
-      cell2.innerHTML = "LoRaWAN Gateway ID";
+      cell2.innerHTML = "Gateway ID";
 
       let cell3 = row.insertCell(2);
       cell3.innerHTML = "Navn";
@@ -93,7 +93,7 @@ function loadXMLDoc() {
 
           let cell2 = row.insertCell(-1);
           cell2.innerHTML = data.resultList[i].gatewayId;
-          cell2.className = "right";
+          cell2.className = "right monospace";
 
           let cell3 = row.insertCell(-1);
           cell3.innerHTML = data.resultList[i].name;
